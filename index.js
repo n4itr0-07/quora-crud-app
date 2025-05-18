@@ -109,6 +109,8 @@ app.delete("/posts/:id", (req, res) => {
   res.redirect("/posts");
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+const host = "0.0.0.0";
+app.listen(port, host, () => {
+  // Modify this line
+  console.log(`Server running at http://${host}:${port}`);
 });
