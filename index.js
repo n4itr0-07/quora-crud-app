@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 8080; // Updated for Railway
+const PORT = process.env.PORT || 8080; // Updated for Railway
+const HOST = '0.0.0.0'; // Critical for Railway
+
 const path = require("path");
 const { v4: uuidv4 } = require("uuid");
 const methodOverride = require("method-override");
@@ -109,8 +111,8 @@ app.delete("/posts/:id", (req, res) => {
   res.redirect("/posts");
 });
 
-const host = "0.0.0.0";
-app.listen(port, host, () => {
-  // Modify this line
-  console.log(`Server running at http://${host}:${port}`);
+
+app.listen(PORT, HOST, () => {
+  console.log(`✅ Server running at http://${HOST}:${PORT}`);
+  console.log(`🌐 Public URL: ${process.env.RAILWAY_PUBLIC_DOMAIN || 'Not set'}`);
 });
