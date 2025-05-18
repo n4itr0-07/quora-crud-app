@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create New Post</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1>Create New Post</h1>
+
+    <form method="POST" action="/posts">
+      <input type="text" name="username" placeholder="Your username" required />
+      <textarea
+        name="content"
+        placeholder="Write your post here..."
+        required
+      ></textarea>
+      <div class="text-center">
+        <button type="submit">Submit Post</button>
+        <a href="/posts" class="btn">Cancel</a>
+      </div>
+    </form>
+  </body>
+</html>

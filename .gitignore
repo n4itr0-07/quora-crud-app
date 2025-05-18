@@ -1,0 +1,16 @@
+# Node basics
+node_modules/
+npm-debug.log
+
+# Environment files (just in case)
+.env
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# IDE files (VSCode)
+.vscode/
+
+# Temp files
+*.tmp
