@@ -32,16 +32,16 @@ A simple CRUD application built with Node.js and Express for learning purposes.
 ## Project Structure
 ```bash
 /
-├── index.js         # Main application file
-├── views/           # EJS templates
-│   ├── index.ejs    # Posts listing
-│   ├── new.ejs      # Create post form
-│   └── edit.ejs     # Edit post form
-├── public/          # Static files
-│   └── style.css    # Basic styling
+├── index.js         # Main app file
+├── views/
+│   ├── index.ejs    # All posts
+│   ├── show.ejs     # Single post
+│   ├── new.ejs      # Create form
+│   └── edit.ejs     # Edit form
+├── public/
+│   └── style.css    # Styles
 └── package.json     # Dependencies
 ```
-
 ## Learning Notes
 - Uses Express routing with RESTful conventions
 - Demonstrates CRUD operations without a database
